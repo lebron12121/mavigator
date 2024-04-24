@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavigator</title>
+    <style>
+        body {
+            margin: 0;
+            position: relative; /* Set the body as the reference for absolute positioning */
+        }
+
+        #floating-button {
+            position: absolute;
+            bottom: 20px; /* Adjust this value to control the vertical position */
+            right: 20px; /* Adjust this value to control the horizontal position */
+            background-color: #0074D9;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+</head>
+<body>
+    <div id="3d-container"></div>
+    
+    <a href="index.html" id="floating-button">Home</a>
+    
+    <script type="module" src="ste.js"></script>
+</body>
+</html>
